@@ -77,7 +77,9 @@ button:hover {
 
 /* General Styling for Menu Screens */
 [data-screen] {
-
+    max-width: 2778px;
+    max-height: 1284px;
+    background-image: url(main_menu.png);
 }
 
 /**
@@ -88,7 +90,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-
+    
 }
 
 /* Main Menu Buttons Styling */
