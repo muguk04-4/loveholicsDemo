@@ -51,12 +51,19 @@ monogatari.assets ('sounds', {
 
 // Define the images used in the game.
 monogatari.assets ('images', {
-
+	'handphone':'handphone.png',
 });
 
 // Define the backgrounds for each scene.
 monogatari.assets ('scenes', {
+	//Public Places
+	'company_loby':'company_loby.jpg',
+	'elevator_front':'elevator_front.jpg',
+	'subway_front':'subway_front.jpg',
 
+	//Room
+	'hotel_sweetroom':'hotel_sweetroom.jpg',
+	'my_room':'my_room.png',
 });
 
 

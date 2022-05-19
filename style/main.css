@@ -36,7 +36,7 @@ body {
   -webkit-animation: fadeout 3s; /* Safari and Chrome */
   animation-fill-mode: forwards;
 }
-@keyframes fadeout {
+@keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -44,7 +44,7 @@ body {
         opacity: 0;
     }
 }
-@-webkit-keyframes fadeout { /* Safari and Chrome */
+@-webkit-keyframes fadeOut { /* Safari and Chrome */
     from {
         opacity: 1;
     }
@@ -52,11 +52,11 @@ body {
         opacity: 0;
     }
 }
-.fadeout {
-  animation: fadeout 3s;
+.fadeOut {
+  animation: fadeOut 3s;
   animation-fill-mode: forwards;
 }
-@keyframes fadeout {
+@keyframes fadeOut {
     from {
         opacity: 1;
     }
@@ -79,7 +79,6 @@ button:hover {
 [data-screen] {
     max-width: 2778px;
     max-height: 1284px;
-    background-image: url(main_menu1.gif);
 }
 
 /**
@@ -90,7 +89,7 @@ button:hover {
 
 /* Main Menu Styling */
 [data-screen="main"] {
-    
+    background-image: url(main_menu1.gif);
 }
 
 /* Main Menu Buttons Styling */
