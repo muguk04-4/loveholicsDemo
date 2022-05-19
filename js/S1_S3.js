@@ -2,6 +2,7 @@ monogatari.script ({
 // 씬1 주석
 	'S1': [
 		'S#1 꿈 / 호텔 스위트룸 / 자정 / INT (C.N)',
+		'gallery unlock sugo',
 
 		'기분좋은 꿈을 꾸는 한여름은, 핸드폰 알람소리에 잠에서 깨어난다.' ,
 		
