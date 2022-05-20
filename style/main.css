@@ -141,7 +141,6 @@ button:hover {
 
 /* Text Box styling */
 [data-component="text-box"] {
-
 }
 
 /* Character Name Style */
@@ -174,7 +173,7 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component="quick-menu"] {
-
+    
 }
 
 /* Quick Menu Buttons Style */

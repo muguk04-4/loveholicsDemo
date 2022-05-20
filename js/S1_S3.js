@@ -6,7 +6,6 @@ monogatari.script ({
 		'gallery unlock sugo',
 
 		'기분좋은 꿈을 꾸는 한여름은, 핸드폰 알람소리에 잠에서 깨어난다.' ,
-		'show image handphone',
 		
 		// 'E. 실내 환경음 (C.N)',
 		// 'P. 스위트룸 욕실 유리문 배경 일러스트 (C.N)',
@@ -40,7 +39,8 @@ monogatari.script ({
 		'그리고는 바짝 긴장해 굳어버린 내 두 팔을 두 손으로 부드럽게 감싸쥐며 속삭인다.',
 		'sexy_guy ....해.',
 		' 뿌옇게 무언가가 덮혀진 듯 먹먹한 소리가 들려왔다. ',
-		'show scene hotel_sweetroom with fadeOut',
+		'show scene hotel_sweetroom',
+		'show scene hotel_sweetroom with ',
 		'me (T.H) 뭐라고? 잘 안들려..',
 		
 		// 'P. 잘생긴 남자 턱밑 일러스트 (cut)',
@@ -76,12 +76,15 @@ monogatari.script ({
 		
 		' 나는 다시 꿈을 꾸기 위해 자세를 바로 하곤 두 눈을 감았다.',
 		
+
 		// 'E. 띠리링, 핸드폰 전화 벨소리 (C.N)',
 		// 'E. 지이잉, 핸드폰 전화 진동소리 (C.N)',
 		// 'I. 핸드폰 컷툰 샷 일러스트 (C.O)',
 		// 'I. 핸드폰 전화벨 컷툰 샷 일러스트 (C.N)',
-		
+		'show image handphone with headShake',
 		' 띠리링, 그러자 이번엔 요란한 내 핸드폰 벨소리가 들려왔다.',
+		'hide image handphone',
+		'show image handphone with wobble',
 		
 		// 'E. 짜증스럽게 이불 걷어내는 소리',
 		
@@ -101,6 +104,8 @@ monogatari.script ({
 		}
 	],
 	'S2_no':[
+		'hide image handphone',
+		'show image handphone with wobble',
 		{
 			'Choice': {
 				'Dialog': '또 전화가 왔다.',
@@ -117,6 +122,7 @@ monogatari.script ({
 	],
 	'S2_yes':[
 		// 'E. 핸드폰을 찾으며 머리맡을 더듬거리는 소리 ',
+		'hide image handphone with backOutDown',
 		
 		' 짜증이 난 나는 미간을 잔뜩　찌푸리며 머리맡의 허공을 더듬어 고철덩어리를 집어들었다.',
 		' 발신자를 확인하니, ‘웬수’라는 이름이 두 눈에 들어온다. 	내 이 녀석을 그냥!',
@@ -274,7 +280,8 @@ monogatari.script ({
 		// 'E. 지잉, 엘리베이터 문 열리는 소리 ',
 		// 'E. 뚜벅뚜벅, kang 엘리베이터 타는 소리 ',
 		
-		' 아주 잠깐 많은 생각이 스쳐지나갔지만, 이내 금방 알아차릴 수 있었다. 길게 생각할 필요도 없었다.',
+		' 아주 잠깐 많은 생각이 스쳐지나갔지만, 이내 금방 알아차릴 수 있었다. ',
+		'길게 생각할 필요도 없었다.',
 		'me (T.H) 지금 내 행동보고 하는 소리야?',
 		
 		// 'I. kang 캐릭터 일러스트  (C.N)',
