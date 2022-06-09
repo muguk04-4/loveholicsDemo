@@ -94,8 +94,19 @@ button:hover {
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
-
+  background-color: rgb(54, 93, 125);
+  text-transform: uppercase;
+  color: white;
 }
+[data-screen="main"] button:hover {
+  background-color: rgb(57, 105, 145);
+}
+[data-screen="main"] button:active {
+  background-color: rgb(34, 71, 102);
+  border: none;
+}
+
+
 
 /**
  * ===========================
@@ -131,21 +142,35 @@ button:hover {
 
 /* Choice Buttons style */
 [data-component="choice-container"] button {
-
+  background-color: rgb(91, 91, 91);
+  display: flex;
+  align-items: center;
+  min-width: 2em;
+  transition: background-color 0.15s;
 }
 
 /* Choice Button Style on Hover */
 [data-component="choice-container"] button:hover {
-
+  background-color: rgb(42, 42, 42);
+}
+[data-component="choice-container"] button:active {
+  background-color: rgb(115, 95, 152);
+  border: none;
 }
 
 /* Text Box styling */
+/* 얘 마진 주니까 고장남. 원인이 뭘꼬? */
 [data-component="text-box"] {
+  background-color: rgb(94, 93, 98);
+  opacity: 0.98;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 /* Character Name Style */
 [data-ui="who"] {
-
+  font-size: 1.3em;
 }
 
 /* Style for Centered Text */
@@ -173,7 +198,9 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component="quick-menu"] {
-    
+  border: 1px solid rgb(94, 105, 105);
+  display: flex;
+  text-align: right;
 }
 
 /* Quick Menu Buttons Style */
