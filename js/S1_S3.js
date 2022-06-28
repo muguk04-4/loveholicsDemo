@@ -1,5 +1,5 @@
 monogatari.script ({
-// 씬1 주석
+// ----------------- 씬1 주석 -----------------
 	'S1': [
 		'show scene hotel_sweetroom with fadeIn 2s',
 		'S#1 꿈 / 호텔 스위트룸 / 자정 / INT (C.N)',
@@ -48,7 +48,7 @@ monogatari.script ({
 		'jump S2'
 	],
 
-// 씬2 주석
+// ----------------- 씬2 주석 -----------------
 	'S2': [
 		'show scene my_room with fadeIn duration 3s',
 		'S#2 지각 / 한여름의 침실 / 오전 8시경 / INT (C.N)',
@@ -167,7 +167,7 @@ monogatari.script ({
 		'jump S3'
 	],
 
-// 씬3 주석
+// ----------------- 씬3 주석 -----------------
 	'S3': [
 		'show scene subway_front with fadeIn duration 3s',
 		'S#3 면접(1) / 지하철 출구 앞 / 오전9시경 / EXT',
