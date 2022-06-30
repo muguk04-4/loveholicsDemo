@@ -268,7 +268,7 @@ monogatari.script ({
     'E. 바스락, 얼음이 든 봉지 쓸리는 소리 ',
 
     //여기 뭔가 이상함
-    'female_employee2    한대리님! 얼음 가져왔습니다! ',
+    'female_employee2    한과장님! 얼음 가져왔습니다! ',
     'han_manager    이대리, 이것 좀 대고 있어. ',
 
     'E. 걸그럭, 봉지 안에 든 얼음이 부딪히는 소리' ,
