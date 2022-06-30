@@ -176,6 +176,14 @@ monogatari.script ({
 				'S3': {
 					'Text': 'S3',
 					'Do': 'jump S3'
+				},
+				'S4': {
+					'Text': 'S4',
+					'Do': 'jump S4'
+				},
+				'S5': {
+					'Text': 'S5',
+					'Do': 'jump S5'
 				}
 			}
 		}
