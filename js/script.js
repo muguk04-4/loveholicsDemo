@@ -35,9 +35,9 @@ monogatari.assets ('music', {
 });
 
 // Define the voice files used in the game.
-monogatari.assets ('voices', {
+// monogatari.assets ('voices', {
 
-});
+// });
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {

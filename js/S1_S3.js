@@ -1,33 +1,33 @@
 monogatari.assets ('music', {
-	//S#001
-	'bgm_moonlight-swing': 'S#001/bgm_40326002_moonlight-swing.mp3',
-	//S#002
-	'bgm_energy': 'S#002/bgm_40708001_energy.mp3',
+	//S001
+	'bgm_moonlight-swing': 'bgm_40326002_moonlight-swing.mp3',
+	//S002
+	'bgm_energy': 'bgm_40708001_energy.mp3',
 });
 
 monogatari.assets ('sounds', {
-	//S#001
-	'wetbarefoottap': 'S#001/eff_10706001_wetbarefoottap.mp3',
-	'glassdoor': 'S#001/eff_30708001_glassdoor.mp3',
-	'bedsitting': 'S#001/eff_30708002_bedsitting.mp3',
-	'quietroom_fade5s': 'S#001/eff_90706002_quietroom_fade5s.mp3',
+	//S001
+	'wetbarefoottap': 'S001/eff_10706001_wetbarefoottap.mp3',
+	'glassdoor': 'S001/eff_30708001_glassdoor.mp3',
+	'bedsitting': 'S001/eff_30708002_bedsitting.mp3',
+	'quietroom_fade5s': 'S001/eff_90706002_quietroom_fade5s.mp3',
 	
-	//S#002
-	'bedsmalldrr': 'S#002/eff_40708001_bedsmalldrr.mp3',
-	'bedbigdrr': 'S#002/eff_40708002_bedbigdrr.mp3',
-	'alarmpipipipi': 'S#002/eff_50708001_alarmpipipipi.mp3',
-	'alertdrrr': 'S#002/eff_50708002_alertdrrr.mp3',
-	'birdpipipi': 'S#002/eff_90708001_birdpipipi.mp3',
+	//S002
+	'bedsmalldrr': 'S002/eff_40708001_bedsmalldrr.mp3',
+	'bedbigdrr': 'S002/eff_40708002_bedbigdrr.mp3',
+	'alarmpipipipi': 'S002/eff_50708001_alarmpipipipi.mp3',
+	'alertdrrr': 'S002/eff_50708002_alertdrrr.mp3',
+	'birdpipipi': 'S002/eff_90708001_birdpipipi.mp3',
 });
 
 monogatari.assets ('voices', {
 	//한여름
 	//강성찬
 	//이연호
-	'S#002_001(Lee)' : 'S#2/S#002_001(Lee).mp3',
-	'S#002_002(Lee)' : 'S#2/S#002_002(Lee).mp3',
-	'S#002_003(Lee)' : 'S#2/S#002_003(Lee).mp3',
-	'S#002_004(Lee)' : 'S#2/S#002_004(Lee).mp3',
+	'S002_001(Lee)' : 'S002/S002_001(Lee).mp3',
+	'S002_002(Lee)' : 'S002/S002_002(Lee).mp3',
+	'S002_003(Lee)' : 'S002/S002_003(Lee).mp3',
+	'S002_004(Lee)' : 'S002/S002_004(Lee).mp3',
 	//엑스트라
 	
 });
@@ -36,70 +36,73 @@ monogatari.script ({
 // ----------------- 씬1 주석 -----------------
 	'S1': [
 		'show scene hotel_sweetroom with fadeIn 2s',
-		'S#1 꿈 / 호텔 스위트룸 / 자정 / INT (C.N)',
+		'S1 꿈 / 호텔 스위트룸 / 자정 / INT (C.N)',
 		'gallery unlock sugo',
 
+		'play music bgm_moonlight-swing with loop',
 		'기분좋은 꿈을 꾸는 한여름은, 핸드폰 알람소리에 잠에서 깨어난다.' ,
 		
-		// 'E. 실내 환경음 (C.N)',
 		// 'P. 스위트룸 욕실 유리문 배경 일러스트 (C.N)',
-		// 'E. 끼익, 욕실 문이 열리는 소리 ',
 		
+		
+		'play sound quietroom_fade5s',
+		'play sound glassdoor',
 		'끼익, 조심스럽게 욕실 문이 열리는 소리가 들려온다.',
 		
 		// 'P. 스위트룸 욕실 유리문 배경 일러스트 (cut)',
 		// 'P. 스위트룸 침실 배경 일러스트 [침실>욕실] (C.N)',
 		// 'E. (V) 한여름 작게 놀란 소리 ',
-		// 'E. 차박차박, 젖은 발자국 소리 (C.N)',
 		
+		'play sound wetbarefoottap',
 		'차박차박. 예쁘게 꾸며진 스위트룸. 은은하게 퍼진 조명. ',
 		'뻣뻣하게 굳은 내 몸은, 누가봐도 바짝 긴장한 티가 나 보인다. ',
+
 		'me (잔뜩 긴장한 호)',
+
 		'잔뜩 굳어있는 내 모습에 피식, 작게 웃는 소리가 어깨 너머로 들려온다. ',
 		
-		// 'E. 차박차박, 젖은 발자국 소리 (cut)',
 		// 'P. (C.O) 잘생긴 남자 턱밑 일러스트 (C.N)',
-		
+		'play sound wetbarefoottap',
 		'sexy_guy 여름아. ',
 		
 		'나는 두 눈을 질끈 감았다. 내가 선택한 가장 매력있는 남자. ',
 		'내가 설마 이 남자와 연애하게 되리라고는 눈꼽만큼도 생각해본 적 없었다. ',
 		'내가 아무런 대답도 하지 않자, 그는 재촉하듯 내 이름을 불렀다. 	',
 		
-		// 'E. 사락, 침대에 걸터앉는 소리',
-		
+		'play sound bedsitting',
 		'sexy_guy 여름아. ',
 		
 		'그리고는 바짝 긴장해 굳어버린 내 두 팔을 두 손으로 부드럽게 감싸쥐며 속삭인다.',
+
 		'sexy_guy ....해.',
+
 		' 뿌옇게 무언가가 덮혀진 듯 먹먹한 소리가 들려왔다. ',
+
 		'me (T.H) 뭐라고? 잘 안들려..',
 		
 		// 'P. 잘생긴 남자 턱밑 일러스트 (cut)',
 		// 'M. 브릿지 (C.O – 일그러뜨림)',
-
-		
+		'stop music bgm_moonlight-swing with fade 3',
 		'jump S2'
 	],
 
 // ----------------- 씬2 주석 -----------------
 	'S2': [
 		'show scene my_room with fadeIn duration 3s',
-		'S#2 지각 / 한여름의 침실 / 오전 8시경 / INT (C.N)',
+		'S2 지각 / 한여름의 침실 / 오전 8시경 / INT (C.N)',
 		
 		'4월 18일. 면접날 지각을 하게 된 한여름은, 소꿉친구 연호의 전화를 받고 정신을 차린다.',
 		
-		// 'E. 실내 환경음 (C.N)',
 		// 'P. 한여름의 침실 배경 일러스트 (C.N)',
-		// 'E. 삐비빅, 핸드폰 알람 소리 ',
 		// 'I. 핸드폰 컷툰 샷 일러스트 (C.N)',
-		
+
+		'play sound birdpipipi',
+		'play sound alarmpipipipi',
 		' 삐비빅. 요란하게 울리며 아침을 알리는 핸드폰 알람소리가 나를 깨웠다.',
 		
 		'me (뒤척이는 호)',
-		
-		// 'E. 사락, 이불 속 뒤척이는 소리 ',
-		
+
+		'play sound bedsmalldrr',
 		'me 아...',
 		' 나는 알람소리에 고통스러워하며 몸을 뒤척이곤 배게에 얼굴을 파묻었다. ',
 		'me (Na) 오랜만에 단꿈이었는데.. 으으. ',
@@ -109,17 +112,15 @@ monogatari.script ({
 		' 나는 다시 꿈을 꾸기 위해 자세를 바로 하곤 두 눈을 감았다.',
 		
 
-		// 'E. 띠리링, 핸드폰 전화 벨소리 (C.N)',
-		// 'E. 지이잉, 핸드폰 전화 진동소리 (C.N)',
+		'play sound alertdrrr',
 		// 'I. 핸드폰 컷툰 샷 일러스트 (C.O)',
 		// 'I. 핸드폰 전화벨 컷툰 샷 일러스트 (C.N)',
 		'show image handphone with headShake',
-		' 띠리링, 그러자 이번엔 요란한 내 핸드폰 벨소리가 들려왔다.',
+		'띠리링, 그러자 이번엔 요란한 내 핸드폰 벨소리가 들려왔다.',
 		'hide image handphone',
 		'show image handphone with wobble',
 		
-		// 'E. 짜증스럽게 이불 걷어내는 소리',
-		
+		'play sound bedbigdrr',
 		'me 아 진짜!',
 		{
 			'Choice': {
@@ -136,6 +137,7 @@ monogatari.script ({
 		}
 	],
 	'S2_no':[
+		'play sound alertdrrr',
 		'hide image handphone',
 		'show image handphone with wobble',
 		{
@@ -153,28 +155,34 @@ monogatari.script ({
 		}
 	],
 	'S2_yes':[
-		// 'E. 핸드폰을 찾으며 머리맡을 더듬거리는 소리 ',
 		'hide image handphone with backOutDown',
+		'play music bgm_energy with loop',
 		
 		' 짜증이 난 나는 미간을 잔뜩　찌푸리며 머리맡의 허공을 더듬어 고철덩어리를 집어들었다.',
 		' 발신자를 확인하니, ‘웬수’라는 이름이 두 눈에 들어온다. 	내 이 녀석을 그냥!',
 		
 		'me (짜증스럽게 한숨)',
 		
-		// 'E. 띠리링, 핸드폰 전화 벨소리 (cut)',
-		// 'E. 지이잉, 핸드폰 전화 진동소리 (cut)',
 		// 'I. 핸드폰 전화벨 컷툰 샷 일러스트 (cut)',
 		// 'E. 톡, 핸드폰 터치 소리 ',
 		
+		// *이부분 컷이라서 아예 없애거나 효과음 중간에 끊는게 좋을 듯
+		'play sound alertdrrr',
 		'me 왜!',
-		'play voice S#002_001(Lee)',
+
+		'play voice S002_001(Lee)',
 		'lee (P) 야 한여름! 너 어디야?',
+
 		' 이연호. 이 녀석은 오래된 내 소꿉친구로 오랜 세월동안 나를 도와준 고마운 녀석이다.',
 		' 하지만 아침부터 내게 전화를 걸 사람은 아닌데? 	나는 평소와 다른 다급한 연호의 목소리에, 조심스럽게 물었다.',
+
 		'me (이상하다는 듯) ...집인데 왜?',
-		'play voice S#002_002(Lee)',
+
+		'play voice S002_002(Lee)',
 		'lee (P) 왜긴 왜야?　너 오늘 면접보는 날이잖아! 아직도 집이면 어떡해?',
+
 		'me 면접?',
+
 		'면접? ‘면접보는 날’이라는 소리가 들리자, 나는 황급히 오늘 날짜를 확인했다. ',
 		
 		// 'I. 4월 18일 동그라미, 별표 체크되어있는 캘린더 컷툰 일러스트 (C.N)',
@@ -184,15 +192,18 @@ monogatari.script ({
 		// 'I. 4월 18일 동그라미, 별표 체크되어있는 캘린더 컷툰 일러스트 (cut)',
 		
 		'me (T.H) 망했다. / ...어떡하지?',
-		'play voice S#002_003(Lee)',
+
+		'play voice S002_003(Lee)',
 		'lee (P) 택시부터 불러! 30분 전에 도착해야 한다고 일찍 일어나야한다고 내가 그렇~게 얘기했는데, 또 제대로 안 들었지?',
+
 		' 앗. 트리거를 건드려버렸다. 트리거를 건들자, 연호 몬스터가 평소처럼 잔소리공격을 해대기 시작한다.',
 		'연호는 항상 이렇게 잔소리를 시작하면 끝이 없다. ',
 		'그의 잔소리는 엄마의 잔소리와 매우 흡사한 공격력을 가지고 있으며, ',
 		'지속딜까지 있어 장시간 공격에 노출된다면 정신이 버티질 못할 것이 분명하다. ',
 		
 		'me 아.. 그, 연호야! 내가 지금 바쁘거든? 이따 보자!!',
-		'play voice S#002_004(Lee)',
+		
+		'play voice S002_004(Lee)',
 		'lee (P) 야..! 야!!! 한여..(O.T)',
 		
 		// 'E. 톡,톡,톡, 핸드폰 터치 소리 ',
@@ -208,7 +219,7 @@ monogatari.script ({
 // ----------------- 씬3 주석 -----------------
 	'S3': [
 		'show scene subway_front with fadeIn duration 3s',
-		'S#3 면접(1) / 지하철 출구 앞 / 오전9시경 / EXT',
+		'S3 면접(1) / 지하철 출구 앞 / 오전9시경 / EXT',
 		
 		'역에 아슬아슬하게 도착하게 된 여름은, 더 늦지 않기 위해 다급히 뛰고 있다. ',
 		
