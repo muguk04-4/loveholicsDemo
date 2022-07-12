@@ -1,3 +1,25 @@
+monogatari.assets ('music', {
+	//S#001
+	'bgm_moonlight-swing': 'S#001/bgm_40326002_moonlight-swing.mp3',
+	//S#002
+	'bgm_energy': 'S#002/bgm_40708001_energy.mp3',
+});
+
+monogatari.assets ('sounds', {
+	//S#001
+	'wetbarefoottap': 'S#001/eff_10706001_wetbarefoottap.mp3',
+	'glassdoor': 'S#001/eff_30708001_glassdoor.mp3',
+	'bedsitting': 'S#001/eff_30708002_bedsitting.mp3',
+	'quietroom_fade5s': 'S#001/eff_90706002_quietroom_fade5s.mp3',
+	
+	//S#002
+	'bedsmalldrr': 'S#002/eff_40708001_bedsmalldrr.mp3',
+	'bedbigdrr': 'S#002/eff_40708002_bedbigdrr.mp3',
+	'alarmpipipipi': 'S#002/eff_50708001_alarmpipipipi.mp3',
+	'alertdrrr': 'S#002/eff_50708002_alertdrrr.mp3',
+	'birdpipipi': 'S#002/eff_90708001_birdpipipi.mp3',
+});
+
 monogatari.assets ('voices', {
 	//한여름
 	//강성찬
