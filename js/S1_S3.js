@@ -20,6 +20,18 @@ monogatari.assets ('sounds', {
 	'birdpipipi': 'S002/eff_90708001_birdpipipi.mp3',
 });
 
+monogatari.characters ({
+	'sexy_guy': {
+		name: '???',
+		color: '#482954',
+	},
+	'AI': {
+		name: 'AI',
+		color: '#482954',
+	},
+
+});
+
 monogatari.assets ('voices', {
 	//한여름
 	//강성찬

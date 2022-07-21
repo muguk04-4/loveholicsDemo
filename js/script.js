@@ -90,6 +90,13 @@ monogatari.characters ({
 		name: '이연호',
 		color: '#FFC314',
 		directory: 'lee',
+		sprites: {
+			normal_R: 'lee_001_R.png',
+			normal2_R: 'lee_002_R.png',
+			smile1_R: 'lee_101_R.png',
+			shy1_R: 'lee_201_R.png',
+			angry1_R: 'lee_301_R.png',
+		}
 	},
 	'han': {
 		name: '한도율',
@@ -102,60 +109,52 @@ monogatari.characters ({
 		directory: 'sa',
 	},
 
-	// 서브 캐릭터들
-	'sexy_guy': {
-		name: '???',
-		color: '#482954',
-	},
-	'AI': {
-		name: 'AI',
-		color: '#482954',
-	},
-	'waiter': {
-		name: '웨이터',
-		color: '#482954',
-		directory: 'sub_characters',
-		sprites: {
-			normal_R: 'etc01_R.png',
-			normal_L: 'etc01_L.png'
-		}
-	},
-	'girl': {
-		name: '소녀',
-		color: '#482954',
-		directory: 'sub_characters',
-		sprites: {
-			normal_R: 'etc02_R.png',
-			normal_L: 'etc02_L.png'
-		}
-	},
-	'boy': {
-		name: '소년',
-		color: '#482954',
-		directory: 'sub_characters',
-		sprites: {
-			normal_R: 'etc03.png',
-			normal_L: 'etc03.png'
-		}
-	},
-	'woman': {
-		name: '여자',
-		color: '#482954',
-		directory: 'sub_characters',
-		sprites: {
-			normal_R: 'etc04_R.png',
-			normal_L: 'etc04_L.png'
-		}
-	},
-	'man': {
-		name: '남자',
-		color: '#482954',
-		directory: 'sub_characters',
-		sprites: {
-			normal_R: 'etc05_R.png',
-			normal_L: 'etc05_L.png'
-		}
-	},
+	// 서브 캐릭터들 사용 방법
+	// 'waiter': {
+	// 	name: '웨이터',
+	// 	color: '#482954',
+	// 	directory: 'sub_characters',
+	// 	sprites: {
+	// 		normal_R: 'etc01_R.png',
+	// 		normal_L: 'etc01_L.png'
+	// 	}
+	// },
+	// 'girl': {
+	// 	name: '소녀',
+	// 	color: '#482954',
+	// 	directory: 'sub_characters',
+	// 	sprites: {
+	// 		normal_R: 'etc02_R.png',
+	// 		normal_L: 'etc02_L.png'
+	// 	}
+	// },
+	// 'boy': {
+	// 	name: '소년',
+	// 	color: '#482954',
+	// 	directory: 'sub_characters',
+	// 	sprites: {
+	// 		normal_R: 'etc03.png',
+	// 		normal_L: 'etc03.png'
+	// 	}
+	// },
+	// 'woman': {
+	// 	name: '여자',
+	// 	color: '#482954',
+	// 	directory: 'sub_characters',
+	// 	sprites: {
+	// 		normal_R: 'etc04_R.png',
+	// 		normal_L: 'etc04_L.png'
+	// 	}
+	// },
+	// 'man': {
+	// 	name: '남자',
+	// 	color: '#482954',
+	// 	directory: 'sub_characters',
+	// 	sprites: {
+	// 		normal_R: 'etc05_R.png',
+	// 		normal_L: 'etc05_L.png'
+	// 	}
+	// },
 });
 
 monogatari.script ({
