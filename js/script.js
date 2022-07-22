@@ -35,9 +35,9 @@ monogatari.assets ('music', {
 });
 
 // Define the voice files used in the game.
-// monogatari.assets ('voices', {
+monogatari.assets ('voices', {
 
-// });
+});
 
 // Define the sounds used in the game.
 monogatari.assets ('sounds', {
@@ -45,13 +45,13 @@ monogatari.assets ('sounds', {
 });
 
 // Define the videos used in the game.
-// monogatari.assets ('videos', {
+monogatari.assets ('videos', {
 
-// });
+});
 
 // Define the images used in the game.
 monogatari.assets ('images', {
-	'handphone':'handphone.png',
+	
 });
 
 // Define the backgrounds for each scene.

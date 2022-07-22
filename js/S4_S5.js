@@ -1,25 +1,25 @@
 monogatari.characters ({
   'female_employee1': {
 		name: '여직원1',
-		color: '#482954',
+		color: '#F4FFFF',
     directory: 'sub_characters',
 		sprites: {
 			normal_R: 'etc04_R.png',
-			normal_L: 'etc04_L.png'
+			normal_L: 'etc04_L.png',
 		}
 	},
   'female_employee2': {
 		name: '여직원2',
-		color: '#482954',
+		color: '#F4FFFF',
     directory: 'sub_characters',
 		sprites: {
-			normal_R: 'etc04_R.png',
-			normal_L: 'etc04_L.png'
+			normal_R: 'etc04_R_moreCenter.png',
+			normal_L: 'etc04_L_moreCenter.png'
 		}
 	},
   'male_employee1': {
 		name: '남직원1',
-		color: '#482954',
+		color: '#F4FFFF',
     directory: 'sub_characters',
 		sprites: {
 			normal_R: 'etc05_R.png',
@@ -28,20 +28,20 @@ monogatari.characters ({
 	},
   'male_employee2': {
 		name: '남직원2',
-		color: '#482954',
+		color: '#F4FFFF',
     directory: 'sub_characters',
 		sprites: {
-			normal_R: 'etc05_R.png',
-			normal_L: 'etc05_L.png'
+			normal_R: 'etc05_R_moreCenter.png',
+			normal_L: 'etc05_L_moreCenter.png'
 		}
 	},
   'han_manager': {
 		name: '한과장',
-		color: '#482954',
+		color: '#F4FFFF',
     directory: 'sub_characters',
 		sprites: {
-			normal_R: 'etc05_R.png',
-			normal_L: 'etc05_L.png'
+			normal_R: 'etc04_R_moreCenter.png',
+			normal_L: 'etc04_L_moreCenter.png'
 		}
 	},
 })
@@ -75,6 +75,7 @@ monogatari.script ({
   'S4' : [
     'S4 책임 / 면접실 층 입구 / 오전10시경 / INT',
     
+    'show character kang normal_R fadeIn with duration 2s',
     'kang 들어가세요. 저희측 실수이니, 책임은 지겠습니다.',
 		{
 			'Choice': {
@@ -96,8 +97,8 @@ monogatari.script ({
 
     '내가 어리둥절한 표정으로 그를 바라보고 있자, 그는 조용히 고개를 끄덕였다. ',
 
-    'E. 달칵, 문이 여닫히는 소리 ',
-    'E. 뚜벅뚜벅, 걸어나오는 소리 ',
+    // 'E. 달칵, 문이 여닫히는 소리 ',
+    // 'E. 뚜벅뚜벅, 걸어나오는 소리 ',
 
     'play voice S004_001(Staff1)',
     'male_employee1 		헉. 대표님!',
@@ -126,6 +127,8 @@ monogatari.script ({
 
     '나는 자기 최면을 걸며 좋은 게 좋은거라며 스스로를 다독였다. ',
     '직원은 내게 인적사항을 몇 가지 물은 후, 잠시만 앉아서 기다려달라 청했다. ',
+
+    'jump S5'
   ],
   'S4_no' :[
     'me 안그러셔도 돼요. 제가 지각한 것도 있고, 어쩔 수 없는거죠. ',
@@ -134,8 +137,8 @@ monogatari.script ({
     '내가 머리를 긁적이며 어쩔 수 없는 것이 아니냐고 하자, ',
     '그는 눈을 가늘게 뜨고 나를 바라보았다. ',
 
-    'E. 달칵, 문 여닫히는 소리 ',
-    'E. 뚜벅뚜벅, 걸어나오는 소리 ',
+    // 'E. 달칵, 문 여닫히는 소리 ',
+    // 'E. 뚜벅뚜벅, 걸어나오는 소리 ',
     
     'male_employee1 헉, 대표님!?',
 
@@ -145,28 +148,29 @@ monogatari.script ({
     '나는 숨을 크게 들이켰다. 대표라고?',
     '그의 정체를 깨닫고 크게 놀라자, 그는 차가운 목소리로 명령하듯 말했다. ',
     
-    'kang 그렇다면 제가 굳이 도와드릴 필요는 없는 것 같군요. 이대로 돌아가보셔도 좋습니다. 접수번호 98번. me양.',
+    'kang 그렇다면 제가 굳이 도와드릴 필요는 없는 것 같군요. 이대로 돌아가보셔도 좋습니다. 접수번호 98번. 한여름양.',
 
-    'me            네?! (FO) ',
+    'me 네?! (FO) ',
     
     '(echo) 도와주는 줄 알았는데, 아니였냐구! ',
     '어쩔 수 없이 터덜터덜 집으로 돌아온 나는, 배게를 세게 던졌다. ',
 
-    'E. 퍽, 베개가 벽을 맞고 구르는 소리 ', 
+    // 'E. 퍽, 베개가 벽을 맞고 구르는 소리 ', 
 
     '그 후, 또 다시 잔소리쟁이 녀석의 공격이 시작되었다. ',
     '으으! 그 재수없는 싸가지자식이 아니었더라면!! ',
 
-    '(BAD END2)'
+    '(BAD END2)',
+    'end'
   ],
 
 // ----------------- 씬5 주석 -----------------
   'S5' : [
     'S5 회사생활(1) / 사무실 / 9시 / INT ',
 
-    'E. 위잉, 커피머신 돌아가는 소리 ',
-    'E. 철컥,철컥, 수십장 프린트하는 소리 ',
-    'E. 달그락, 잔 꺼내는 소리 ',
+    // 'E. 위잉, 커피머신 돌아가는 소리 ',
+    // 'E. 철컥,철컥, 수십장 프린트하는 소리 ',
+    // 'E. 달그락, 잔 꺼내는 소리 ',
 
     '내 업무는 특별할 건 없었다. ',
     '커피타주기, 프린트하기, 서류정리하기 잡심부름.',
@@ -184,6 +188,7 @@ monogatari.script ({
     '나는 활기차게 인사와 함께 팀원들에게 차례로 커피를 건낸 후, ',
     '연호와 내 몫의 커피를 들고 자리에 앉았다. ',
 
+    'show character lee normal_R fadeIn with duration 2s',
     'me 		연호, 커피. ',
     
     'play voice S005_001(Lee)',
@@ -245,7 +250,7 @@ monogatari.script ({
 
     '대표님이라면, 면접날에 나를 도와주었던 그 싸가지였다. ',
 
-    'me		(T.H) 대표씩이나 되는 사람이, 사원들이 있는 곳에 내려오기도 하나? ',
+    'me (T.H) 대표씩이나 되는 사람이, 사원들이 있는 곳에 내려오기도 하나? ',
 
     '나는 갸우뚱 거리다, 이내 생각하길 포기하고 고개를 끄덕이며 연호가 보내준 자료를 프린트를 하기 위해 자리에서 일어났다. ',
     '그러자, 연호가 내게 말했다.',
@@ -273,26 +278,29 @@ monogatari.script ({
     
     'me      연호야~ 이연호오~',
 
-    '          그러자, 연호가 뜨악한 표정으로 나를 돌아보며 몸을 돌렸다. ',
+    '그러자, 연호가 뜨악한 표정으로 나를 돌아보며 몸을 돌렸다. ',
 
     'play voice S005_001(Lee0)',
+    'show character lee normal_R with shakeX',
     'lee      (뜨악한 표정으로) 너 왜그래? 미쳤..앗 뜨거!!',
 
     '계획한대로 커피잔이 깨지며 연호의 손을 젃셨다. ',
 
-    'E. 와장창, 커피잔 깨지는 소리 ',
+    // 'E. 와장창, 커피잔 깨지는 소리 ',
 
     'me     푸하하하! 이연호, 꼴 좋다! ',
     
     '크게 웃으며 자지러지는 나와 달리, 연호의 표정이 심상치않다. ',
     '큰 소리가 나며 연호의 비명소리가 들리자, 사무실에서 일하던 직원들이 하나둘씩 일어나며 우리쪽으로 다가오기 시작했다. ',
 
-    'E. 드르륵, 의자 끌리는 소리 ',
-    'E. 뚜벅뚜벅 여직원2가 뛰어오듯 걸어오는 소리 ',
+    // 'E. 드르륵, 의자 끌리는 소리 ',
+    // 'E. 뚜벅뚜벅 여직원2가 뛰어오듯 걸어오는 소리 ',
 
+    'show character female_employee1 normal_L at left with fadeIn',
     'female_employee1    뭐야? ',
     'female_employee2   이대리, 괜찮아?!',
     'play voice S005_001(Msteff1)',
+    'show character male_employee1 normal_R at right with fadeIn',
     'male_employee1    뭐야, 무슨 일이야? ',
     'play voice S005_002(Lee0)',
     'lee      아.. 괜찮습니다.',
@@ -303,34 +311,44 @@ monogatari.script ({
 
     'play voice S005_001(Msteff2)',
     'male_employee2    (다그치며) 한여름씨. 호칭 정정 안합니까? 여기가 놀이턴 줄 아세요?! ',
-    'han_maneger     이대리, 세상에 손 빨간 것 좀 봐. 누가 얼음 좀 가져와! ',
+    // 'show character han_manager normal_R at right with fadeIn',
+    // 이거 하려고 했는데 막상 넣어보니 비율이 이상함
+    'han_maneger 이대리, 세상에 손 빨간 것 좀 봐. 누가 얼음 좀 가져와! ',
 
-    'E. 타다닥, 뛰어오는 소리 ',
-    'E. 바스락, 얼음이 든 봉지 쓸리는 소리 ',
+    // 'E. 타다닥, 뛰어오는 소리 ',
+    // 'E. 바스락, 얼음이 든 봉지 쓸리는 소리 ',
 
     'female_employee2    한과장님! 얼음 가져왔습니다! ',
     'han_manager    이대리, 이것 좀 대고 있어. ',
 
-    'E. 걸그럭, 봉지 안에 든 얼음이 부딪히는 소리' ,
+    // 'E. 걸그럭, 봉지 안에 든 얼음이 부딪히는 소리' ,
     'han_manager     한여름씨, 갑자기 이게 어떻게 된 일이에요? ',
 
     'play voice S005_003(Lee0)',
     'lee      과장님, 이건 그냥 제 실수로..',
 
     'han_manager      (O.L) 내가 이대리한테 물은 건 아니잖아. ',
+
     '상황이 이상하게 돌아간다. 내가 원했던 건 이게 아닌데.. 그냥 날 거들떠도 보지 않는 게 괘씸했을 뿐인데.. ',
 
     'me      아, 그게… 그냥 장난 좀 쳤을..',
     'han_manager     (O.L) 회사에서 장난이요?!!',
 
     '한과장이 버럭 소리쳤다. 나는 질끈 눈을 감았다. ',
+    'hide character lee with fadeOut',
+    'hide character female_employee1 with fadeOut',
+    'hide character female_employee2 with fadeOut',
+    'hide character male_employee1 with fadeOut',
+    'hide character male_employee2 with fadeOut',
     '그대로 퇴근 지시를 받은 나는  터덜터덜 집으로 돌아와, 배게를 세게 던졌다. ',
+    
 
-    'E. 퍽, 베개가 벽을 맞고 구르는 소리 ',
+    // 'E. 퍽, 베개가 벽을 맞고 구르는 소리 ',
 
     '연호에게 사과하고 싶었지만, 그녀석에게서도 연락 한통 오지 않았다. ',
     '그대로 나는 직장도 잃고, 친구도 잃은 백수가 되고 말았다. ',
 
-    '(BAD END2)'
+    '(BAD END2)',
+    'end'
   ]
 })

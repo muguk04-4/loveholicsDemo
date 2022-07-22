@@ -20,16 +20,19 @@ monogatari.assets ('sounds', {
 	'birdpipipi': 'S002/eff_90708001_birdpipipi.mp3',
 });
 
+monogatari.assets ('images', {
+	'handphone':'handphone.png',
+});
+
 monogatari.characters ({
 	'sexy_guy': {
 		name: '???',
-		color: '#482954',
+		color: '#F4FFFF',
 	},
 	'AI': {
 		name: 'AI',
-		color: '#482954',
+		color: '#F4FFFF',
 	},
-
 });
 
 monogatari.assets ('voices', {
@@ -179,7 +182,7 @@ monogatari.script ({
 		// 'E. 톡, 핸드폰 터치 소리 ',
 		
 		// *이부분 컷이라서 아예 없애거나 효과음 중간에 끊는게 좋을 듯
-		'play sound alertdrrr',
+		//'play sound alertdrrr',
 		'me 왜!',
 
 		'play voice S002_001(Lee)',
@@ -317,7 +320,8 @@ monogatari.script ({
 		'me (목소리를 가다듬으며) 크흠! 접수번호 98번. 한여름입니다. ',
 		
 		// 'E. (off) 뚜벅뚜벅, 누군가 걸어오는 발소리 ',
-		
+		// 여기서 브금 바꿔도 될듯?
+
 		'me (숨을 길게 내쉬며) 음... 조금 더 부드럽게 말해볼까?',
 		'kang 그래요. 접수번호 98번. 한여름양. 우리 회사는 목소리로 사람을 뽑진 않는데 말이죠.',
 		'me (화들짝 놀란 호) ',
@@ -495,8 +499,12 @@ monogatari.script ({
 		
 		// 'E. 또각또각, 걸어들어가는 발소리',
 		
-		' 남자는 따르라는 말과는 달리, 나를 기다리지 않고 빠른 걸음으로 먼저 내부로 들어가버렸고,',
-		'나는 그런 그를 서둘러 후다닥 따라갔다. ',
+		'남자는 따르라는 말과는 달리, 나를 기다리지 않고 빠른 걸음으로 먼저 ',
+		'내부로 들어가버렸고, 나는 그런 그를 서둘러 뒤쫓았다. ',
+		'후다닥, 나는 빠른 발걸음으로 그를 뒤쫓았다. 한참을 따라 걷자, ',
+		'그는 곧 어떤 문 앞에 우뚝 서서는 나를 돌아보았다. ',
+
+		'jump S4'
 	]
 
 });
