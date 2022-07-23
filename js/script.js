@@ -60,10 +60,13 @@ monogatari.assets ('scenes', {
 	'company_loby':'company_loby.jpg',
 	'elevator_front':'elevator_front.jpg',
 	'subway_front':'subway_front.jpg',
+	'interview_front':'interview_front.jpg',
+	
 
 	//Room
 	'hotel_sweetroom':'hotel_sweetroom.jpg',
 	'my_room':'my_room.png',
+	'office':'office.jpg',
 });
 
 

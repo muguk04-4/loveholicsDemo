@@ -73,7 +73,11 @@ monogatari.assets ('voices', {
 monogatari.script ({
   // ----------------- 씬4 주석 -----------------
   'S4' : [
+    'show scene elevator_front',
+		'show scene elevator_front with fadeOut',
+		'show scene interview_front with fadeIn duration 3s',
     'S4 책임 / 면접실 층 입구 / 오전10시경 / INT',
+    
     
     'show character kang normal_R fadeIn with duration 2s',
     'kang 들어가세요. 저희측 실수이니, 책임은 지겠습니다.',
@@ -100,6 +104,7 @@ monogatari.script ({
     // 'E. 달칵, 문이 여닫히는 소리 ',
     // 'E. 뚜벅뚜벅, 걸어나오는 소리 ',
 
+    'show character male_employee1 normal_L at left with fadeIn',
     'play voice S004_001(Staff1)',
     'male_employee1 		헉. 대표님!',
     
@@ -140,6 +145,8 @@ monogatari.script ({
     // 'E. 달칵, 문 여닫히는 소리 ',
     // 'E. 뚜벅뚜벅, 걸어나오는 소리 ',
     
+    'show character male_employee1 normal_L at left with fadeIn',
+    'play voice S004_001(Staff1)',
     'male_employee1 헉, 대표님!?',
 
     ' 그때였다. 이제 곧 면접이 끝날 무렵이었는 지, ',
@@ -153,6 +160,10 @@ monogatari.script ({
     'me 네?! (FO) ',
     
     '(echo) 도와주는 줄 알았는데, 아니였냐구! ',
+
+    'show scene interview_front',
+		'show scene interview_front with fadeOut',
+		'show scene my_room with fadeIn duration 3s',
     '어쩔 수 없이 터덜터덜 집으로 돌아온 나는, 배게를 세게 던졌다. ',
 
     // 'E. 퍽, 베개가 벽을 맞고 구르는 소리 ', 
@@ -166,6 +177,9 @@ monogatari.script ({
 
 // ----------------- 씬5 주석 -----------------
   'S5' : [
+    'show scene interview_front',
+		'show scene interview_front with fadeOut',
+		'show scene office with fadeIn duration 3s',
     'S5 회사생활(1) / 사무실 / 9시 / INT ',
 
     // 'E. 위잉, 커피머신 돌아가는 소리 ',
@@ -337,9 +351,11 @@ monogatari.script ({
     '한과장이 버럭 소리쳤다. 나는 질끈 눈을 감았다. ',
     'hide character lee with fadeOut',
     'hide character female_employee1 with fadeOut',
-    'hide character female_employee2 with fadeOut',
     'hide character male_employee1 with fadeOut',
-    'hide character male_employee2 with fadeOut',
+    
+    'show scene office',
+		'show scene office with fadeOut',
+		'show scene my_room with fadeIn duration 3s',
     '그대로 퇴근 지시를 받은 나는  터덜터덜 집으로 돌아와, 배게를 세게 던졌다. ',
     
 

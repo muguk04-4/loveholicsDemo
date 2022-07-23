@@ -319,6 +319,7 @@ monogatari.script ({
 
 		'me (목소리를 가다듬으며) 크흠! 접수번호 98번. 한여름입니다. ',
 		
+		'stop music energy with fade 3',
 		// 'E. (off) 뚜벅뚜벅, 누군가 걸어오는 발소리 ',
 		// 여기서 브금 바꿔도 될듯?
 
@@ -337,7 +338,7 @@ monogatari.script ({
 		'이런 완벽한 남자가 이 회사에 있다고? 나도 모르게 마른 침이 꿀꺽 넘어갔다. ',
 		'내가 아무말도 않고 바라보고 있자, 남자는 작게 웃으며 말했다.',
 		
-		'show character kang smile1_R fadeIn with duration 2s',
+		'show character kang smile1_R fadeIn with duration 2s end-fadeOut',
 		'kang (작게 웃으며) 목소린 우렁차니 됐고, 서류부터 체크해보세요.',
 		'me (T.H) ...뭐?',
 		
@@ -353,7 +354,9 @@ monogatari.script ({
 		'길게 생각할 필요도 없었다.',
 		'me (T.H) 지금 내 행동보고 하는 소리야?',
 		
-		'show character kang normal_R',
+		// 여기부분 애니메이션 안넣었다 쳐도 일러스트 바뀔때 이상함
+		// 표정만 바뀌는게 아닌것같음. 위치도 바뀌는 듯
+		'show character kang normal_R fadeIn with duration 1s',
 		'kang 안 탑니까? ',
 		{
 			'Choice': {
