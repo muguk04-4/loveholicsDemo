@@ -66,8 +66,9 @@ body {
 }
 
 /* Simple Button styles*/
+/* 모든 버튼 */
 button {
-
+  
 }
 
 /* Simple Button Style on Hover */
@@ -94,9 +95,10 @@ button:hover {
 
 /* Main Menu Buttons Styling */
 [data-screen="main"] button {
-  background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
-  text-transform: uppercase;
+  background:linear-gradient(120deg, #CE9FFC 0%,#7367F0 90%);
   color: white;
+  font-size: 1.5em;
+  
 }
 [data-screen="main"] button:hover {
   background-color: rgb(57, 105, 145);
@@ -164,11 +166,12 @@ button:hover {
   border-radius: 8px 8px 0px 0px;
   padding-top: 10px;
   padding-left: 10px;
+  border: none;
 }
 
 /* Character Name Style */
 [data-ui="who"] {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 /* Style for Centered Text */
@@ -196,7 +199,7 @@ button:hover {
 
 /* Quick Menu Style */
 [data-component="quick-menu"] {
-  border: 1px solid rgb(94, 105, 105);
+  border: none;
   border-radius: 0px 0px 8px 8px;
   display: flex;
   text-align: right;
