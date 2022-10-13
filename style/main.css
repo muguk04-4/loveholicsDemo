@@ -98,15 +98,17 @@ button:hover {
   background:linear-gradient(120deg, #CE9FFC 0%,#7367F0 90%);
   color: white;
   font-size: 1.5em;
-  
+  box-shadow: 2px 2px 0px 1px rgba(0, 0, 255, .2);
 }
-[data-screen="main"] button:hover {
+/* 아래 호버, 액티브 안먹힘 */
+/* [data-screen="main"] button:hover {
   background-color: rgb(57, 105, 145);
+  border: none;
 }
 [data-screen="main"] button:active {
   background-color: rgb(34, 71, 102);
   border: none;
-}
+} */
 
 
 /**
